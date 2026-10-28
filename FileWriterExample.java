@@ -1,8 +1,7 @@
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
-public class WriteFileExample {
-    public static void main(String[] args) throws IOException {
+public class FileWriterExample {
+    public static void main(String[] args) throws Exception {
 
         FileWriter Writer = new FileWriter("Student.txt");  // opens the file for writing and creates it if necessary.
 
@@ -10,7 +9,7 @@ public class WriteFileExample {
         Writer.write("\n");   // \n adds a line break on common platforms.
         Writer.write("Age: 23");
         Writer.write("\n");
-        Writer.write("State: West BEngal");
+        Writer.write("State: West Bengal");
         Writer.write("\n");
         Writer.write("Programming: Java Full Stack Devlopment");
 

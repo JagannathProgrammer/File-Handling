@@ -1,4 +1,4 @@
 Name: Jagannath
 Age: 23
-State: West BEngal
+State: West Bengal
 Programming: Java Full Stack Devlopment
