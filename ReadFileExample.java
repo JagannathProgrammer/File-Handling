@@ -1,17 +1,26 @@
-import java.io.BufferedReader;
+
+
 import java.io.FileReader;
+import java.io.BufferedReader;
 import java.io.IOException;
 
 public class ReadFileExample {
-    public static void main(String[] args) {
-        try (BufferedReader reader = new BufferedReader(new FileReader("Student.txt"))) {
-            String line;
+    public static void main(String[] args) throws IOException {
 
-            while ((line = reader.readLine()) != null) {
-                System.out.println(line);
-            }
-        } catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+        FileReader file = new FileReader("Student.txt");
+        // Opens the file for reading.
+
+        BufferedReader reader = new BufferedReader(file);
+        // Helps us read the file line by line.
+
+        String line;
+
+        while ((line = reader.readLine()) != null) {
+            System.out.println(line);
         }
+
+        reader.close();
+        // Closes the reader.
+
     }
 }
