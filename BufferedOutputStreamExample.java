@@ -1,5 +1,5 @@
 import java.io.*;
-public class BufferOutputStreamExample {
+public class BufferedOutputStreamExample {
     public static void main(String[] args) throws Exception{
         FileOutputStream FOS = new FileOutputStream("Student3.txt");
         BufferedOutputStream BOS = new BufferedOutputStream(FOS);
